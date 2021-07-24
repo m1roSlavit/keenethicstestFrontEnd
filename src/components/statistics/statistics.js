@@ -7,7 +7,7 @@ const Statistics = ({bikesList}) => {
   const totalBikes = bikesList.length;
   const availableBikes = bikesList.filter(bike => bike.status === 'available').length;
   const bookedBikes = bikesList.filter(bike => bike.status === 'busy').length;
-  const averageBikeCost = bikesList.reduce((sum, bike) => sum + bike.price, 0);
+  const averageBikeCost = totalBikes ? (bikesList.reduce((sum, bike) => sum + bike.price, 0) / totalBikes) : 0;
 
   return (
     <div className="statistics">
@@ -16,7 +16,7 @@ const Statistics = ({bikesList}) => {
         <li className="statistics__list-item">Total Bikes: <strong>{totalBikes}</strong></li>
         <li className="statistics__list-item">Available Bikes: <strong>{availableBikes}</strong></li>
         <li className="statistics__list-item">Booked Bikes: <strong>{bookedBikes}</strong></li>
-        <li className="statistics__list-item">Average bike cost: <strong>{averageBikeCost}</strong> UAH/hr.</li>
+        <li className="statistics__list-item">Average bike cost: <strong>{averageBikeCost.toFixed(2)}</strong> UAH/hr.</li>
       </ul>
     </div>
   );
