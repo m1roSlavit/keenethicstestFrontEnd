@@ -1,0 +1,21 @@
+.admin-panel {
+  height: 100%;
+  display: flex;
+
+  &__col {
+    padding: 0 10px;
+  }
+
+  &__left-col {
+    padding-top: 10px;
+    width: 55%;
+    border-right: 1px solid #C4C4C4;
+    height: 100%;
+  }
+
+  &__right-col {
+    padding-top: 10px;
+    width: 45%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+.btn {
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 22px;
+  border: none;
+  cursor: pointer;
+  padding: 4px 22px;
+
+  &-primary {
+    background-color: #696969;
+    color: #ffffff;
+
+    &:disabled {
+      background-color: #c5c5c5;
+    }
+  }
+
+  &-fluid {
+    width: 100%;
+  }
+}

@@ -1,0 +1,23 @@
+.statistics {
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__list-item {
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 22px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.add-bike-form {
+  &__row {
+    margin-bottom: 10px;
+    display: flex;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  &__col {
+    width: 50%;
+    margin: 0 5px;
+  }
+
+  &__col-fluid {
+    width: 100%;
+    margin: 0 5px;
+  }
+}

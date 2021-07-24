@@ -1,0 +1,86 @@
+.bike-card {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-color: #e8e8e8;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  padding: 12px 12px 12px 18px;
+  transition: 0.3s;
+
+  &_available {
+    border-color: #6fcf97;
+  }
+
+  &_busy {
+    border-color: #f2994a;
+  }
+
+  &_unavailable {
+    border-color: #f5abab;
+    background-color: #f3f3f3;
+
+    .bike-card {
+
+      &__title {
+        color: #7a7a7a;
+      }
+
+      &__id {
+        color: #7a7a7a;
+      }
+
+      &__price {
+        color: #7a7a7a;
+      }
+
+      &__delete img {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 3px;
+  }
+
+  &__id {
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 13px;
+    color: #717171;
+    margin-bottom: 7px;
+  }
+
+  &__status {
+    display: flex;
+
+    &-label {
+      text-transform: uppercase;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  &__delete {
+    position: absolute;
+    right: 3px;
+    top: 0;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  &__right-col {
+    display: flex;
+  }
+
+  &__price {
+    display: flex;
+    align-self: flex-end;
+    font-size: 24px;
+  }
+}

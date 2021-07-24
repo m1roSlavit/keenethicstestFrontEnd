@@ -1,0 +1,49 @@
+.select {
+  position: relative;
+  padding-left: 8px;
+
+  &__control {
+    display: flex;
+    align-items: center;
+  }
+
+  &__value-container {
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+  }
+
+  &__indicators {
+    margin-left: 5px;
+    cursor: pointer;
+  }
+
+  &__menu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    left: 0;
+    top: 100%;
+    border: 1px solid #c4c4c4;
+    z-index: 3;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__option {
+    cursor: pointer;
+    padding: 8px;
+    color: #333333;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+    font-size: 16px;
+
+    &:hover {
+      color: black;
+      background-color: #dedede;
+    }
+
+  }
+}
